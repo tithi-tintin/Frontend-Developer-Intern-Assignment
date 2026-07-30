@@ -3,8 +3,9 @@
 A responsive frontend implementation of the ShipNow logistics and shipment-management dashboard for the Trends Bird Limited Frontend Developer Intern assignment.
 
 ## Live demo
+[Open the live ShipNow application](https://frontend-developer-intern-assignmen-two.vercel.app/)
 
-The production URL should be added here immediately after deployment. The application is already configured for the provided Sites/Vinext deployment target and also works with an equivalent Cloudflare-compatible host.
+Demo login: enter any valid email address and any password containing at least 6 characters.
 
 ## Technology
 
@@ -137,7 +138,7 @@ tests/                       Source architecture and rendered application checks
 
 ## Known issues
 
-- The public GitHub repository and live demo URL are external submission steps and must be added by the candidate before submitting the Google Form.
+- No known blocking issues in the deployed frontend.
 - The supplied tablet/mobile screenshots were compressed; small type inherits its exact content from the corresponding desktop references.
 
 ## Submission checklist
