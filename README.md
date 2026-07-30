@@ -6,7 +6,7 @@ A responsive frontend implementation of the ShipNow logistics and shipment-manag
 [Open the live ShipNow application](https://frontend-developer-intern-assignmen-two.vercel.app/)
 
 Demo login: enter any valid email address and any password containing at least 6 characters.
-
+Deployment verified successfully in a private browsing window.
 ## Technology
 
 - React 19
