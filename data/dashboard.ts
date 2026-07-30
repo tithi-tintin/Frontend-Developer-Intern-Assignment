@@ -1,0 +1,135 @@
+export const productCategories = [
+  ["Electronics", 240, 24],
+  ["Home & Kitchen", 200, 20],
+  ["Apparel", 180, 18],
+  ["Beauty & Health", 140, 14],
+  ["Sports & Outdoors", 120, 12],
+  ["Automotive", 120, 12],
+] as const;
+
+export const shipmentStatistics = [
+  { month: "Jan", shipments: 1760 },
+  { month: "Feb", shipments: 2250 },
+  { month: "Mar", shipments: 2500 },
+  { month: "Apr", shipments: 3124 },
+  { month: "May", shipments: 2780 },
+  { month: "Jun", shipments: 3500 },
+  { month: "Jul", shipments: 3920 },
+  { month: "Aug", shipments: 4352 },
+] as const;
+
+export const profitSummary = [
+  { month: "Jan", revenue: 34, cost: 20 },
+  { month: "Feb", revenue: 25, cost: 18 },
+  { month: "Mar", revenue: 29, cost: 22 },
+  { month: "Apr", revenue: 40, cost: 31 },
+  { month: "May", revenue: 35, cost: 28 },
+  { month: "Jun", revenue: 60, cost: 45 },
+  { month: "Jul", revenue: 50, cost: 38 },
+  { month: "Aug", revenue: 42, cost: 32 },
+] as const;
+
+export const shipmentTypeBreakdown = [
+  { name: "Road Freight", value: 1000, color: "#8068f2" },
+  { name: "Air Freight", value: 625, color: "#292929" },
+  { name: "Ocean Freight", value: 375, color: "#797979" },
+  { name: "Rail Freight", value: 500, color: "#ececed" },
+] as const;
+
+export const shipmentAlerts = [
+  ["Customs Clearance Delay", "#SH8743921 · Ocean Freight · Mar 20"],
+  ["Incorrect Address Provided", "#SH8758310 · Road Freight · Mar 20"],
+  ["Weather-Related Hold", "#SH8700043 · Air Freight · Mar 19"],
+  ["Incorrect Address Provided", "#SH8726714 · Rail Freight · Mar 18"],
+] as const;
+
+export const recentActivities = [
+  ["▣", "User @TechGuru99 submitted a bulk shipment request", "12:00 PM"],
+  ["◇", "Customer Support @SupportKen added a priority tag to Order ID 77889JKL", "11:30 AM"],
+  ["C", "User @SallyMae88 initiated a return process for Order ID 44556GH", "11:00 AM"],
+  ["✓", "Administrator @AdminLisa resolved a delivery issue for Order ID 12345XYZ", "10:15 AM"],
+] as const;
+
+export const dashboardRecentShipments: Shipment[] = [
+  {
+    id: "SH9283746",
+    company: "TechGear Inc.",
+    category: "Electronics",
+    productCategory: "Electronics",
+    carrier: "FedEx",
+    vehicle: "Air Freight",
+    origin: "Los Angeles, CA",
+    destination: "Chicago, IL",
+    issueDate: "Mar 20, 2035 - 10:00 AM",
+    arrivalDate: "Mar 23, 2035 - 03:00 PM",
+    weight: "1,200 kg",
+    progress: 60,
+    status: "In Transit",
+    accent: "◆",
+  },
+  {
+    id: "SH9182635",
+    company: "StyleHub Co.",
+    category: "Apparel",
+    productCategory: "Apparel",
+    carrier: "DHL",
+    vehicle: "Road Freight",
+    origin: "New York, NY",
+    destination: "Atlanta, GA",
+    issueDate: "Mar 19, 2035 - 11:30 AM",
+    arrivalDate: "Mar 22, 2035 - 01:00 PM",
+    weight: "850 kg",
+    progress: 75,
+    status: "Out for Delivery",
+    accent: "▲",
+  },
+  {
+    id: "SH9037821",
+    company: "FreshNest",
+    category: "Home & Kitchen",
+    productCategory: "Home & Kitchen",
+    carrier: "UPS",
+    vehicle: "Ocean Freight",
+    origin: "Dallas, TX",
+    destination: "Miami, FL",
+    issueDate: "Mar 18, 2035 - 09:00 AM",
+    arrivalDate: "Mar 21, 2035 - 06:00 PM",
+    weight: "1,450 kg",
+    progress: 100,
+    status: "Delivered",
+    accent: "⬟",
+  },
+  {
+    id: "SH9374652",
+    company: "FitPlus Gear",
+    category: "Sports & Outdoors",
+    productCategory: "Sports & Outdoors",
+    carrier: "USPS",
+    vehicle: "Rail Freight",
+    origin: "Seattle, WA",
+    destination: "Denver, CO",
+    issueDate: "Mar 21, 2035 - 08:45 AM",
+    arrivalDate: "Mar 25, 2035 - 04:30 PM",
+    weight: "960 kg",
+    progress: 40,
+    status: "Processing",
+    accent: "●",
+  },
+  {
+    id: "SH9457830",
+    company: "AutoParts Pro",
+    category: "Automotive",
+    productCategory: "Automotive",
+    carrier: "Aramex",
+    vehicle: "Road Freight",
+    origin: "Detroit, MI",
+    destination: "San Diego, CA",
+    issueDate: "Mar 20, 2035 - 07:15 AM",
+    arrivalDate: "Mar 26, 2035 - 02:00 PM",
+    weight: "1,680 kg",
+    progress: 50,
+    status: "In Transit",
+    accent: "◒",
+  },
+];
+import type { Shipment } from "@/types";
